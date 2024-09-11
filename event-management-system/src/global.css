@@ -1,0 +1,166 @@
+/* src/global.css */
+
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa; /* Light background */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header styling */
+header {
+  background-color: #f8f9fa;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.header .logo {
+  position: absolute;
+  left: 20px; /* Keeps the logo on the left */
+}
+
+.header .logo img {
+  width: 100px; /* Adjust logo size */
+}
+
+.header-text {
+  text-align: center;
+}
+
+.header-text h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.header-text p {
+  margin: 5px 0 0 0;
+  font-size: 16px;
+}
+
+
+/* Main container styling */
+main {
+  padding: 2em;
+  max-width: 900px;
+  margin: 2em auto;
+  background: #ffffff; /* White background */
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styling */
+form {
+  display: grid;
+  gap: 1em; /* Space between form elements */
+  margin-bottom: 2em;
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+textarea:focus {
+  border-color: #007bff; /* Focus border color */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle shadow on focus */
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #d3d3d3;
+  cursor: not-allowed;
+}
+
+
+/* Event list styling */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #e9ecef; /* Light grey background */
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s; /* Animation for hover effect */
+}
+
+li:hover {
+  transform: translateY(-2px); /* Lift effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+}
+
+li h3 {
+  margin: 0;
+  color: #333;
+}
+
+li p {
+  margin: 0.5em 0;
+  color: #555;
+}
+
+/* Footer styling */
+.footer {
+  background-color: #343a40; /* Dark footer color */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  main {
+    margin: 1em;
+    padding: 1.5em;
+  }
+
+  button {
+    font-size: 14px;
+  }
+
+  input[type="text"],
+  input[type="date"],
+  textarea {
+    font-size: 14px;
+  }
+}
